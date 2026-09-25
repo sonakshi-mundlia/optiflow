@@ -1,0 +1,191 @@
+# ============================================================
+# OPTIFLOW - ROOT GITIGNORE
+# ============================================================
+
+
+# ============================================================
+# ENVIRONMENT VARIABLES / SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+
+# ============================================================
+# PYTHON / BACKEND
+# ============================================================
+
+# Virtual environments
+backend/venv/
+backend/.venv/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python build files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# ============================================================
+# FASTAPI / UVICORN
+# ============================================================
+
+*.log
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+
+# ============================================================
+# NODE / NEXT.JS / FRONTEND
+# ============================================================
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Next.js
+.next/
+frontend/.next/
+
+# Production build
+out/
+frontend/out/
+
+# Turbopack
+.turbo/
+frontend/.turbo/
+
+# Vercel
+.vercel/
+frontend/.vercel/
+
+# Next.js cache
+frontend/.next/cache/
+
+
+# ============================================================
+# TYPESCRIPT
+# ============================================================
+
+*.tsbuildinfo
+frontend/*.tsbuildinfo
+
+
+# ============================================================
+# IDE / EDITORS
+# ============================================================
+
+.vscode/
+.idea/
+
+# VS Code local settings
+*.code-workspace
+
+
+# ============================================================
+# OPERATING SYSTEM
+# ============================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# General logs
+logs/
+*.log
+
+
+# ============================================================
+# BUILD / CACHE FILES
+# ============================================================
+
+.cache/
+.parcel-cache/
+.eslintcache
+
+
+# ============================================================
+# LOCAL DEVELOPMENT FILES
+# ============================================================
+
+# PostgreSQL local dumps
+*.sql.backup
+*.dump
+
+# Redis dumps
+dump.rdb
+
+# Memurai / Redis local files
+*.rdb
+
+
+# ============================================================
+# GENERATED / LOCAL PROJECT FILES
+# ============================================================
+
+# Generated uploads
+uploads/
+backend/uploads/
+frontend/uploads/
+
+# Generated reports
+reports/
+backend/reports/
+
+# Local test outputs
+test-output/
+coverage/

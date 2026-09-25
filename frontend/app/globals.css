@@ -1,0 +1,272 @@
+@import "tailwindcss";
+
+:root {
+  --yellow: #fbbc04;
+  --yellow-dark: #d99f00;
+  --yellow-light: #fff8db;
+
+  --blue: #4285f4;
+  --blue-dark: #3367d6;
+  --blue-light: #eaf2ff;
+
+  --green: #34a853;
+  --green-light: #e9f7ee;
+
+  --red: #ea4335;
+  --red-light: #fdf0ee;
+
+  --white: #ffffff;
+  --text: #202124;
+  --muted: #6b6b6b;
+  --border: #e5e5e5;
+  --surface: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--text);
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* ============================================================
+   COMMON
+   ============================================================ */
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--white);
+  border-radius: 18px;
+}
+
+.surface {
+  background: var(--surface);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* ============================================================
+   BRAND
+   ============================================================ */
+
+.brand {
+  color: var(--yellow-dark);
+}
+
+.brand-bg {
+  background: var(--yellow);
+  color: var(--text);
+}
+
+.brand-light {
+  background: var(--yellow-light);
+  color: var(--yellow-dark);
+}
+
+.accent {
+  width: 42px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--yellow);
+}
+
+/* ============================================================
+   BLUE
+   ============================================================ */
+
+.blue-text {
+  color: var(--blue);
+}
+
+.blue-light {
+  background: var(--blue-light);
+  color: var(--blue);
+}
+
+/* ============================================================
+   GREEN
+   ============================================================ */
+
+.green-text {
+  color: var(--green);
+}
+
+.green-light {
+  background: var(--green-light);
+  color: var(--green);
+}
+
+/* ============================================================
+   RED
+   ============================================================ */
+
+.red-text {
+  color: var(--red);
+}
+
+.red-light {
+  background: var(--red-light);
+  color: var(--red);
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.btn-blue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 9px;
+  background: var(--blue);
+  color: white;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn-blue:hover {
+  background: var(--blue-dark);
+  transform: translateY(-1px);
+}
+
+.btn-yellow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--yellow);
+  border-radius: 9px;
+  background: var(--yellow);
+  color: var(--text);
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn-yellow:hover {
+  background: var(--yellow-dark);
+  transform: translateY(-1px);
+}
+
+/* ============================================================
+   BADGES
+   ============================================================ */
+
+.badge-yellow,
+.badge-blue,
+.badge-green,
+.badge-red {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-yellow {
+  background: var(--yellow-light);
+  color: var(--yellow-dark);
+  border: 1px solid #f3d46a;
+}
+
+.badge-blue {
+  background: var(--blue-light);
+  color: var(--blue);
+  border: 1px solid #c9dafc;
+}
+
+.badge-green {
+  background: var(--green-light);
+  color: var(--green);
+  border: 1px solid #b7dfc1;
+}
+
+.badge-red {
+  background: var(--red-light);
+  color: var(--red);
+  border: 1px solid #f3c4bf;
+}
+
+/* ============================================================
+   INPUT
+   ============================================================ */
+
+.query-input {
+  width: 100%;
+  resize: none;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: white;
+  color: var(--text);
+  padding: 16px;
+  outline: none;
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.query-input::placeholder {
+  color: #9aa0a6;
+}
+
+.query-input:focus {
+  border-color: var(--yellow);
+  box-shadow: 0 0 0 3px var(--yellow-light);
+}
+
+/* ============================================================
+   HOVER
+   ============================================================ */
+
+.hover-yellow {
+  transition: border-color 0.2s ease;
+}
+
+.hover-yellow:hover {
+  border-color: var(--yellow);
+}
+
+/* ============================================================
+   SELECTION
+   ============================================================ */
+
+::selection {
+  background: var(--yellow);
+  color: var(--text);
+}
